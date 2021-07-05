@@ -1,0 +1,15 @@
+
+language: java
+
+jdk:
+    - openjdk11
+
+addons: 
+    sonarcloud: 
+        organization: martina97
+        token: 
+            a42c2349b75b9994a79e960206418ad12dd2a423
+
+script: 
+    
+    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent test sonar:sonar -Dsonar.projectKey=Martina97_JCS-Tests -Pcoverage
