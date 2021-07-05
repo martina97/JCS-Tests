@@ -18,73 +18,82 @@ package it.uniroma2.dicii.isw2.jcs.paramTests;
  * under the License.
  */
 
-import java.util.ArrayList;
-import java.util.List;
-
-import junit.framework.TestCase;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.jcs.JCS;
+import org.apache.jcs.access.exception.CacheException;
 import org.apache.jcs.engine.stats.behavior.IStatElement;
 import org.apache.jcs.engine.stats.behavior.IStats;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
-/**
- * This is based on a test that was posted to the user's list:
- *
- * http://www.opensubscriber.com/message/jcs-users@jakarta.apache.org/2435965.html
- *
- */
-public class JCSThrashTest
-    extends TestCase
-{
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
 
-    private static final Log LOG = LogFactory.getLog( JCSThrashTest.class.getName() );
+import static org.junit.Assert.*;
 
-    /**
-     * the cache instance
-     */
-    protected JCS jcs;
 
-    /**
-     * @param args
-     */
-    public static void main( String[] args )
-    {
-        junit.textui.TestRunner.run( JCSThrashTest.class );
+@RunWith(Parameterized.class)
+public class MyJCSThrashTest {
+
+    private static final Log LOG = LogFactory.getLog( MyJCSThrashTest.class.getName() );
+
+    private JCS jcs;
+    private String configFilename;  //public static void setConfigFilename(String configFilename)
+    private String region;  //public static JCS getInstance(String region)
+    private int numThreads;
+    private int numKeys;
+
+    public MyJCSThrashTest(String configFilename, String region, int numThreads, int numKeys){
+        this.configFilename = configFilename;
+        this.region = region;
+        this.numThreads = numThreads;
+        this.numKeys = numKeys;
+
     }
 
+    @Parameterized.Parameters
+    public static Collection<?> getParameter() {
+
+        return Arrays.asList(new Object[][] {
+                {"/TestThrash.ccf" ,"testcache", 15, 500},
+                {"/TestThrash.ccf" ,"testcache", -1, -1}
+
+        });
+    }
+
+
+
     /**
-     * @param arg0
+     * Test setup
      */
-    public JCSThrashTest( String arg0 )
-    {
-        super( arg0 );
+    @Before
+    public void configure() throws CacheException {
+        JCS.setConfigFilename( this.configFilename );
+        jcs = JCS.getInstance( this.region );
     }
 
-    protected void setUp()
-        throws Exception
-    {
-        super.setUp();
-        JCS.setConfigFilename( "/TestThrash.ccf" );
-        jcs = JCS.getInstance( "testcache" );
-    }
 
-    protected void tearDown()
-        throws Exception
-    {
-        super.tearDown();
+    @After
+    public void tearDown() throws CacheException {
         jcs.clear();
         jcs.dispose();
     }
+
+
+
 
     /**
      * Tests adding an entry.
      * @throws Exception
      */
-    public void testPut()
-        throws Exception
-    {
+    @Test
+    public void testPut() throws CacheException {
         final String value = "value";
         final String key = "key";
 
@@ -106,8 +115,9 @@ public class JCSThrashTest
      * Test elements can be removed from the store
      * @throws Exception
      */
+    @Test
     public void testRemove()
-        throws Exception
+            throws Exception
     {
         jcs.put( "key1", "value1" );
         assertEquals( 1, getListSize() );
@@ -127,14 +137,16 @@ public class JCSThrashTest
         assertEquals( 1, getListSize() );
     }
 
+
     /**
      * This does a bunch of work and then verifies that the memory has not grown by much.
      * Most of the time the amount of memory used after the test is less.
      *
      * @throws Exception
      */
+    @Test
     public void testForMemoryLeaks()
-        throws Exception
+            throws Exception
     {
         long differenceMemoryCache = thrashCache();
         LOG.info( "Memory Difference is: " + differenceMemoryCache );
@@ -143,12 +155,43 @@ public class JCSThrashTest
         //LOG.info( "Memory Used is: " + measureMemoryUse() );
     }
 
+
+
+
+    /**
+     *
+     * @return
+     */
+    private int getListSize()
+    {
+        final String listSize = "List Size";
+        final String lruMemoryCache = "LRU Memory Cache";
+        String result = "0";
+        IStats istats[] = jcs.getStatistics().getAuxiliaryCacheStats();
+        for ( int i = 0; i < istats.length; i++ )
+        {
+            IStatElement statElements[] = istats[i].getStatElements();
+            if ( lruMemoryCache.equals( istats[i].getTypeName() ) )
+            {
+                for ( int j = 0; j < statElements.length; j++ )
+                {
+                    if ( listSize.equals( statElements[j].getName() ) )
+                    {
+                        result = statElements[j].getData();
+                    }
+                }
+            }
+
+        }
+        return Integer.parseInt( result );
+    }
+
     /**
      * @return
      * @throws Exception
      */
     protected long thrashCache()
-        throws Exception
+            throws Exception
     {
 
         long startingSize = measureMemoryUse();
@@ -162,14 +205,14 @@ public class JCSThrashTest
 
         // Create 15 threads that read the keys;
         final List executables = new ArrayList();
-        for ( int i = 0; i < 15; i++ )
+        for ( int i = 0; i < numThreads; i++ )
         {
-            final JCSThrashTest.Executable executable = new JCSThrashTest.Executable()
+            final MyJCSThrashTest.Executable executable = new MyJCSThrashTest.Executable()
             {
                 public void execute()
-                    throws Exception
+                        throws Exception
                 {
-                    for ( int i = 0; i < 500; i++ )
+                    for ( int i = 0; i < numKeys; i++ )
                     {
                         final String key = "key" + i;
                         jcs.get( key );
@@ -182,16 +225,16 @@ public class JCSThrashTest
 
         // Create 15 threads that are insert 500 keys with large byte[] as
         // values
-        for ( int i = 0; i < 15; i++ )
+        for ( int i = 0; i < numThreads; i++ )
         {
-            final JCSThrashTest.Executable executable = new JCSThrashTest.Executable()
+            final MyJCSThrashTest.Executable executable = new MyJCSThrashTest.Executable()
             {
                 public void execute()
-                    throws Exception
+                        throws Exception
                 {
 
                     // Add a bunch of entries
-                    for ( int i = 0; i < 500; i++ )
+                    for ( int i = 0; i < numKeys; i++ )
                     {
                         // Use a random length value
                         final String key = "key" + i;
@@ -217,7 +260,7 @@ public class JCSThrashTest
      * @throws Exception
      */
     protected void runThreads( final List executables )
-        throws Exception
+            throws Exception
     {
 
         final long endTime = System.currentTimeMillis() + 10000;
@@ -227,7 +270,7 @@ public class JCSThrashTest
         final Thread[] threads = new Thread[executables.size()];
         for ( int i = 0; i < threads.length; i++ )
         {
-            final JCSThrashTest.Executable executable = (JCSThrashTest.Executable) executables.get( i );
+            final MyJCSThrashTest.Executable executable = (MyJCSThrashTest.Executable) executables.get( i );
             threads[i] = new Thread()
             {
                 public void run()
@@ -263,6 +306,7 @@ public class JCSThrashTest
         }
     }
 
+
     /**
      * Measure memory used by the VM.
      *
@@ -270,7 +314,7 @@ public class JCSThrashTest
      * @throws InterruptedException
      */
     protected long measureMemoryUse()
-        throws InterruptedException
+            throws InterruptedException
     {
         System.gc();
         Thread.sleep( 3000 );
@@ -289,49 +333,7 @@ public class JCSThrashTest
          * @throws Exception
          */
         void execute()
-            throws Exception;
+                throws Exception;
     }
 
-    /**
-     *
-     * @return
-     */
-    private int getListSize()
-    {
-        final String listSize = "List Size";
-        final String lruMemoryCache = "LRU Memory Cache";
-        String result = "0";
-        IStats istats[] = jcs.getStatistics().getAuxiliaryCacheStats();
-        for ( int i = 0; i < istats.length; i++ )
-        {
-            IStatElement statElements[] = istats[i].getStatElements();
-            if ( lruMemoryCache.equals( istats[i].getTypeName() ) )
-            {
-                for ( int j = 0; j < statElements.length; j++ )
-                {
-                    if ( listSize.equals( statElements[j].getName() ) )
-                    {
-                        result = statElements[j].getData();
-                    }
-                }
-            }
-
-        }
-        return Integer.parseInt( result );
-    }
-
-//    private int getMapSize()
-//    {
-//        final String listSize = "Map Size";
-//        String result = "0";
-//        IStatElement statElements[] = jcs.getStatistics().getStatElements();
-//        for ( int i = 0; i < statElements.length; i++ )
-//        {
-//            if ( listSize.equals( statElements[i].getName() ) )
-//            {
-//                result = statElements[i].getData();
-//            }
-//        }
-//        return Integer.parseInt( result );
-//    }
 }

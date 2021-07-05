@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="869399d2-1da4-4069-9161-fdb6817e464a" name="Default Changelist" comment="" />
+    <list default="true" id="869399d2-1da4-4069-9161-fdb6817e464a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/JCSRemovalSimpleConcurrentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/JCSThrashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/JCSThrashTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/MyJCSRemovalSimpleConcurrentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/MyJCSRemovalSimpleConcurrentTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +18,13 @@
     <testPatterns>
       <classPattern testedClass="$CLASS$" testClass="test/$CLASS$Test" />
     </testPatterns>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="302" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../report jcs coverage" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,6 +77,11 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="coverage" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1utErw90qX7gTz2ReyooaqgnEOl" />
   <component name="ProjectViewState">
@@ -71,16 +90,38 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../report jcs coverage" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4586207" />
   </component>
-  <component name="RunManager" selected="JUnit.MyJCSRemovalSimpleConcurrentTest (1)">
-    <configuration name="MyJCSRemovalSimpleConcurrentTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test -Pcoverage" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MyJCSThrashTest">
+    <configuration name="JCSThrashTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JCS-Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.uniroma2.dicii.isw2.jcs.paramTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.uniroma2.dicii.isw2.jcs.paramTests" />
+      <option name="MAIN_CLASS_NAME" value="it.uniroma2.dicii.isw2.jcs.paramTests.JCSThrashTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyJCSRemovalSimpleConcurrentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JCS-Tests" />
       <extension name="coverage">
         <pattern>
@@ -95,25 +136,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyJCSRemovalSimpleConcurrentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JCS Project" />
-      <extension name="coverage">
+    <configuration name="MyJCSThrashTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JCS-Tests" />
+      <useClassPathOnly />
+      <extension name="coverage" runner="jacoco">
         <pattern>
           <option name="PATTERN" value="it.uniroma2.dicii.isw2.jcs.paramTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="it.uniroma2.dicii.isw2.jcs.paramTests" />
-      <option name="MAIN_CLASS_NAME" value="it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSRemovalSimpleConcurrentTest" />
+      <option name="MAIN_CLASS_NAME" value="it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSThrashTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.JCSThrashTest" />
+      <item itemvalue="JUnit.MyJCSRemovalSimpleConcurrentTest (1)" />
+      <item itemvalue="JUnit.MyJCSThrashTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyJCSThrashTest" />
+        <item itemvalue="JUnit.JCSThrashTest" />
         <item itemvalue="JUnit.MyJCSRemovalSimpleConcurrentTest (1)" />
-        <item itemvalue="JUnit.MyJCSRemovalSimpleConcurrentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +178,10 @@
       <option name="presentableId" value="Default" />
       <updated>1625476687685</updated>
       <workItem from="1625476693250" duration="4500000" />
-      <workItem from="1625482161101" duration="266000" />
+      <workItem from="1625482161101" duration="867000" />
+      <workItem from="1625483074328" duration="969000" />
+      <workItem from="1625486572581" duration="2712000" />
+      <workItem from="1625489458930" duration="1527000" />
     </task>
     <servers />
   </component>
@@ -136,37 +189,63 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="542" y="221" width="898" height="672" key="#MyJCSThrashTest" timestamp="1625489940533">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="542" y="221" width="898" height="672" key="#MyJCSThrashTest/72.27.1848.1053@72.27.1848.1053" timestamp="1625489940533" />
     <state x="729" y="311" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1625478291094">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="729" y="311" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1625478291094" />
+    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625489893221">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1625489893221" />
+    <state x="686" y="358" width="609" height="699" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1625490383582">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="686" y="358" width="609" height="699" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1625490383582" />
+    <state x="731" y="413" width="529" height="299" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1625489471905">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="731" y="413" width="529" height="299" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/72.27.1848.1053@72.27.1848.1053" timestamp="1625489471905" />
     <state x="729" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625479732095">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="729" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1625479732095" />
-    <state x="618" y="300" width="735" height="520" key="FileChooserDialogImpl" timestamp="1625477857729">
+    <state x="618" y="300" width="735" height="520" key="FileChooserDialogImpl" timestamp="1625490665455">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="618" y="300" width="735" height="520" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1625477857729" />
-    <state width="1802" height="255" key="GridCell.Tab.0.bottom" timestamp="1625482428833">
+    <state x="618" y="300" width="735" height="520" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1625490665455" />
+    <state width="1802" height="198" key="GridCell.Tab.0.bottom" timestamp="1625490836850">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="255" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1625482428833" />
-    <state width="1802" height="255" key="GridCell.Tab.0.center" timestamp="1625482428832">
+    <state width="1802" height="198" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1625490836850" />
+    <state width="1802" height="198" key="GridCell.Tab.0.center" timestamp="1625490836849">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="255" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1625482428832" />
-    <state width="1802" height="255" key="GridCell.Tab.0.left" timestamp="1625482428831">
+    <state width="1802" height="198" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1625490836849" />
+    <state width="1802" height="198" key="GridCell.Tab.0.left" timestamp="1625490836849">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="255" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1625482428831" />
-    <state width="1802" height="255" key="GridCell.Tab.0.right" timestamp="1625482428832">
+    <state width="1802" height="198" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1625490836849" />
+    <state width="1802" height="198" key="GridCell.Tab.0.right" timestamp="1625490836850">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="255" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1625482428832" />
+    <state width="1802" height="198" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1625490836850" />
     <state x="479" y="131" width="1024" height="852" key="SettingsEditor" timestamp="1625479665949">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="479" y="131" width="1024" height="852" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1625479665949" />
+    <state x="660" y="252" width="672" height="677" key="run.anything.popup" timestamp="1625490836879">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="660" y="252" width="672" height="677" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1625490836879" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JCS_Tests$MyJCSThrashTest.exec" NAME="MyJCSThrashTest Coverage Results" MODIFIED="1625489898119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.uniroma2.dicii.isw2.jcs.paramTests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="../../Scrivania/Intellij-workspace/JCS-Tests/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1625490162696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
