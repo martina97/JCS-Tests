@@ -62,7 +62,7 @@ public class MyJCSThrashTest {
 
         return Arrays.asList(new Object[][] {
                 {"/TestThrash.ccf" ,"testcache", 15, 500},
-                {"/TestThrash.ccf" ,"testcache", -1, -1}
+               // {"/TestThrash.ccf" ,"testcache", -1, -1}
 
         });
     }

@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="869399d2-1da4-4069-9161-fdb6817e464a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/JCSRemovalSimpleConcurrentTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/JCSThrashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/JCSThrashTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/MyJCSRemovalSimpleConcurrentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/MyJCSRemovalSimpleConcurrentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/MyJCSThrashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/MyJCSThrashTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-it.uniroma2.dicii.isw2.jcs.paramTests.JCSThrashTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSRemovalSimpleConcurrentTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSThrashTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/it.uniroma2.dicii.isw2.jcs.paramTests.JCSThrashTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSRemovalSimpleConcurrentTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSThrashTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/JCS-Tests.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +24,7 @@
     </testPatterns>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="302" />
+    <option name="myElementSize" value="23" />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="OPEN_IN_BROWSER" value="true" />
@@ -99,6 +103,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4586207" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -155,15 +160,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.MyJCSRemovalSimpleConcurrentTest" />
       <item itemvalue="JUnit.JCSThrashTest" />
-      <item itemvalue="JUnit.MyJCSRemovalSimpleConcurrentTest (1)" />
       <item itemvalue="JUnit.MyJCSThrashTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MyJCSThrashTest" />
         <item itemvalue="JUnit.JCSThrashTest" />
-        <item itemvalue="JUnit.MyJCSRemovalSimpleConcurrentTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +185,8 @@
       <workItem from="1625482161101" duration="867000" />
       <workItem from="1625483074328" duration="969000" />
       <workItem from="1625486572581" duration="2712000" />
-      <workItem from="1625489458930" duration="1527000" />
+      <workItem from="1625489458930" duration="4538000" />
+      <workItem from="1626022270921" duration="3742000" />
     </task>
     <servers />
   </component>
@@ -217,26 +222,26 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="618" y="300" width="735" height="520" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1625490665455" />
-    <state width="1802" height="198" key="GridCell.Tab.0.bottom" timestamp="1625490836850">
+    <state width="1802" height="544" key="GridCell.Tab.0.bottom" timestamp="1625495246018">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="198" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1625490836850" />
-    <state width="1802" height="198" key="GridCell.Tab.0.center" timestamp="1625490836849">
+    <state width="1802" height="544" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1625495246018" />
+    <state width="1802" height="544" key="GridCell.Tab.0.center" timestamp="1625495246016">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="198" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1625490836849" />
-    <state width="1802" height="198" key="GridCell.Tab.0.left" timestamp="1625490836849">
+    <state width="1802" height="544" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1625495246016" />
+    <state width="1802" height="544" key="GridCell.Tab.0.left" timestamp="1625495246015">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="198" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1625490836849" />
-    <state width="1802" height="198" key="GridCell.Tab.0.right" timestamp="1625490836850">
+    <state width="1802" height="544" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1625495246015" />
+    <state width="1802" height="544" key="GridCell.Tab.0.right" timestamp="1625495246017">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="198" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1625490836850" />
-    <state x="479" y="131" width="1024" height="852" key="SettingsEditor" timestamp="1625479665949">
+    <state width="1802" height="544" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1625495246017" />
+    <state x="479" y="131" width="1024" height="852" key="SettingsEditor" timestamp="1625492610626">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="479" y="131" width="1024" height="852" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1625479665949" />
+    <state x="479" y="131" width="1024" height="852" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1625492610626" />
     <state x="660" y="252" width="672" height="677" key="run.anything.popup" timestamp="1625490836879">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
