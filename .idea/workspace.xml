@@ -3,15 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="869399d2-1da4-4069-9161-fdb6817e464a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/MyJCSRemovalSimpleConcurrentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/MyJCSRemovalSimpleConcurrentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/MyJCSThrashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/uniroma2/dicii/isw2/jcs/paramTests/MyJCSThrashTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-it.uniroma2.dicii.isw2.jcs.paramTests.JCSThrashTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSRemovalSimpleConcurrentTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSThrashTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/it.uniroma2.dicii.isw2.jcs.paramTests.JCSThrashTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSRemovalSimpleConcurrentTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSThrashTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/JCS-Tests.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.access/CacheAccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.access/CacheAccess.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.access/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.access/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.access/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.access/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.control/CompositeCacheConfigurator.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.control/CompositeCacheConfigurator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.control/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.control/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.control/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.control/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.memory.lru/LRUMemoryCache.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.memory.lru/LRUMemoryCache.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.memory.lru/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.memory.lru/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.memory.lru/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.engine.memory.lru/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.struct/DoubleLinkedList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.struct/DoubleLinkedList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.struct/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.struct/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.struct/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.struct/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.threadpool/ThreadPoolManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.threadpool/ThreadPoolManager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.threadpool/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.threadpool/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.threadpool/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-gen/jcs-coverage/org.apache.jcs.utils.threadpool/index.source.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +35,7 @@
     </testPatterns>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="23" />
+    <option name="myElementSize" value="36" />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="OPEN_IN_BROWSER" value="true" />
@@ -99,7 +110,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../report jcs coverage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4586207" />
@@ -110,7 +121,7 @@
       <command value="mvn test -Pcoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyJCSThrashTest">
+  <component name="RunManager" selected="JUnit.MyJCSRemovalSimpleConcurrentTest">
     <configuration name="JCSThrashTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JCS-Tests" />
       <extension name="coverage">
@@ -128,7 +139,8 @@
     </configuration>
     <configuration name="MyJCSRemovalSimpleConcurrentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JCS-Tests" />
-      <extension name="coverage">
+      <useClassPathOnly />
+      <extension name="coverage" runner="jacoco">
         <pattern>
           <option name="PATTERN" value="it.uniroma2.dicii.isw2.jcs.paramTests.*" />
           <option name="ENABLED" value="true" />
@@ -136,7 +148,9 @@
       </extension>
       <option name="PACKAGE_NAME" value="it.uniroma2.dicii.isw2.jcs.paramTests" />
       <option name="MAIN_CLASS_NAME" value="it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSRemovalSimpleConcurrentTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,6 +180,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyJCSRemovalSimpleConcurrentTest" />
         <item itemvalue="JUnit.MyJCSThrashTest" />
         <item itemvalue="JUnit.JCSThrashTest" />
       </list>
@@ -186,7 +201,8 @@
       <workItem from="1625483074328" duration="969000" />
       <workItem from="1625486572581" duration="2712000" />
       <workItem from="1625489458930" duration="4538000" />
-      <workItem from="1626022270921" duration="3742000" />
+      <workItem from="1626022270921" duration="4469000" />
+      <workItem from="1626124003039" duration="2974000" />
     </task>
     <servers />
   </component>
@@ -202,14 +218,16 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="729" y="311" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1625478291094" />
-    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625489893221">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="454" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626127037328">
+      <screen x="72" y="27" width="1848" height="933" />
     </state>
     <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1625489893221" />
-    <state x="686" y="358" width="609" height="699" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1625490383582">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="454" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.933@72.27.1848.933" timestamp="1626127037328" />
+    <state x="686" y="320" width="609" height="699" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626124531945">
+      <screen x="72" y="27" width="1848" height="933" />
     </state>
     <state x="686" y="358" width="609" height="699" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1625490383582" />
+    <state x="686" y="320" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.933@72.27.1848.933" timestamp="1626124531945" />
     <state x="731" y="413" width="529" height="299" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1625489471905">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -218,26 +236,31 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="729" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1625479732095" />
-    <state x="618" y="300" width="735" height="520" key="FileChooserDialogImpl" timestamp="1625490665455">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="618" y="269" width="735" height="520" key="FileChooserDialogImpl" timestamp="1626027027872">
+      <screen x="72" y="27" width="1848" height="933" />
     </state>
     <state x="618" y="300" width="735" height="520" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1625490665455" />
-    <state width="1802" height="544" key="GridCell.Tab.0.bottom" timestamp="1625495246018">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="618" y="269" key="FileChooserDialogImpl/72.27.1848.933@72.27.1848.933" timestamp="1626027027872" />
+    <state width="1802" height="284" key="GridCell.Tab.0.bottom" timestamp="1626127102144">
+      <screen x="72" y="27" width="1848" height="933" />
     </state>
     <state width="1802" height="544" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1625495246018" />
-    <state width="1802" height="544" key="GridCell.Tab.0.center" timestamp="1625495246016">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1802" height="284" key="GridCell.Tab.0.bottom/72.27.1848.933@72.27.1848.933" timestamp="1626127102144" />
+    <state width="1802" height="284" key="GridCell.Tab.0.center" timestamp="1626127102142">
+      <screen x="72" y="27" width="1848" height="933" />
     </state>
     <state width="1802" height="544" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1625495246016" />
-    <state width="1802" height="544" key="GridCell.Tab.0.left" timestamp="1625495246015">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1802" height="284" key="GridCell.Tab.0.center/72.27.1848.933@72.27.1848.933" timestamp="1626127102142" />
+    <state width="1802" height="284" key="GridCell.Tab.0.left" timestamp="1626127102141">
+      <screen x="72" y="27" width="1848" height="933" />
     </state>
     <state width="1802" height="544" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1625495246015" />
-    <state width="1802" height="544" key="GridCell.Tab.0.right" timestamp="1625495246017">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1802" height="284" key="GridCell.Tab.0.left/72.27.1848.933@72.27.1848.933" timestamp="1626127102141" />
+    <state width="1802" height="284" key="GridCell.Tab.0.right" timestamp="1626127102143">
+      <screen x="72" y="27" width="1848" height="933" />
     </state>
     <state width="1802" height="544" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1625495246017" />
+    <state width="1802" height="284" key="GridCell.Tab.0.right/72.27.1848.933@72.27.1848.933" timestamp="1626127102143" />
     <state x="479" y="131" width="1024" height="852" key="SettingsEditor" timestamp="1625492610626">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -248,7 +271,13 @@
     <state x="660" y="252" width="672" height="677" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1625490836879" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/JCS_Tests$MyJCSThrashTest.exec" NAME="MyJCSThrashTest Coverage Results" MODIFIED="1625489898119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/JCS_Tests$MyJCSThrashTest.exec" NAME="MyJCSThrashTest Coverage Results" MODIFIED="1626126653491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.uniroma2.dicii.isw2.jcs.paramTests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JCS_Tests$MyJCSRemovalSimpleConcurrentTest.exec" NAME="MyJCSRemovalSimpleConcurrentTest Coverage Results" MODIFIED="1626127091171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.uniroma2.dicii.isw2.jcs.paramTests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JCS_Tests$MyJCSRemovalSimpleConcurrentTest.ic" NAME="MyJCSRemovalSimpleConcurrentTest Coverage Results" MODIFIED="1626124841279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>it.uniroma2.dicii.isw2.jcs.paramTests.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="../../Scrivania/Intellij-workspace/JCS-Tests/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1625490162696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

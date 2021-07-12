@@ -50,7 +50,11 @@ public class MyJCSRemovalSimpleConcurrentTest {
     public static Collection<?> getParameter() {
 
         return Arrays.asList(new Object[][] {
-                {"/TestRemoval.ccf" ,"testCache1", 500}
+                {"/TestRemoval.ccf" ,"testCache1", 500},
+                {"/TestRemoval.ccf" ,"testCache1", -1},
+                {"/TestRemoval.ccf" ,"testCache1", 0}
+
+
         });
     }
 
@@ -190,6 +194,7 @@ public class MyJCSRemovalSimpleConcurrentTest {
         System.out.println( "Confirmed that all items were removed" );
 
     }
+
 
     /**
      * Verify that we can clear repeatedly without error.
